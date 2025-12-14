@@ -1,1 +1,18 @@
+trigger:
 
+- main
+
+pool: 
+  vmImage: 'ubuntu-latest' 
+
+variables:
+  appName: 'devapp'
+  enename: 'production'
+  message: 'Welcome to Azure DevOps'
+
+steps:
+- script: echo $(message)
+
+- script: 
+    echo "Application Name: $(appName)"
+    echo "Environment Name: $(enename)"
