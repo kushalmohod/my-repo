@@ -14,5 +14,6 @@ steps:
 - script: echo $(message)
 
 - script: 
+  
     echo "Application Name: $(appName)"
     echo "Environment Name: $(enename)"
